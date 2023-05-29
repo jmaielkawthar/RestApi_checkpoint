@@ -1,0 +1,20 @@
+GET HTTP://127.0.0.1:3000/users
+
+### => content-Type: application/json
+
+POST HTTP://127.0.0.1:3000/users
+
+{
+"name": "new person", "age": "20", "favoriteFoods":["spagati", "cheese"]
+}
+
+### 
+
+DELETE HTTP://127.0.0.1:3000/users/644875f7b78bd5a406e685ab
+
+### => content-Type: application/json
+
+PATCH HTTP://127.0.0.1:3000/users/6440395e14c9758d4181c737
+{
+"name": "change name", "age": "25", "favoriteFoods":["salade", "meat"]
+}
